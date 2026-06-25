@@ -1,7 +1,6 @@
 import { PhoneCall, Sparkles, CalendarDays } from "lucide-react";
 import { VapiWebCallButton } from "@/components/vapi-web-call-button";
 import { AiPhoneFrame } from "@/components/marketing/ai-phone-frame";
-import { AnimatedTranscript } from "@/components/marketing/animated-transcript";
 
 export default function DentalDemoPage() {
   return (
@@ -57,18 +56,6 @@ Keep your responses concise, empathetic, and professional.`
                   }}
                 />
               </AiPhoneFrame>
-              <div className="w-full max-w-md hidden lg:block">
-                <AnimatedTranscript 
-                  title="Dental AI"
-                  customMessages={[
-                    { id: 1, sender: "ai", text: "Hello, Dr. Smith Dentistry. How can I help you today?" },
-                    { id: 2, sender: "user", text: "Hi, I'm in a lot of pain and need to see someone ASAP." },
-                    { id: 3, sender: "ai", text: "I'm so sorry to hear that. I'm prioritizing your call as an emergency. Are you currently bleeding?" },
-                    { id: 4, sender: "user", text: "No bleeding, just severe tooth pain." },
-                    { id: 5, sender: "ai", text: "Thank you for letting me know. We have an emergency triage opening at 3:15 PM today. I'm putting you in for that slot right now." }
-                  ]} 
-                />
-              </div>
             </div>
 
             <div className="mx-auto mt-24 max-w-3xl border border-slate-200 bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50">
